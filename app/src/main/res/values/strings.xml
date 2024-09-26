@@ -1,0 +1,23 @@
+<resources>
+    <string name="app_name">StoreApp</string>
+    <string name="oops">Oops</string>
+    <string name="something_went_wrong">Something_went_wrong</string>
+    <string name="continue_txt">Continue</string>
+    <string name="username">Username</string>
+    <string name="password">Password</string>
+    <string name="login">Login</string>
+    <string name="sign_in_with_google">Sign in with Google</string>
+    <string name="or">- OR -</string>
+    <string name="welcome_back">Welcome back  </string>
+    <string name="confirm_email">Confirm email</string>
+    <string name="hey_there">Hey there</string>
+    <string name="continue_with_social_login">Continue with social login</string>
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+    <string name="store">Store</string>
+    <string name="basket_image">Basket Image</string>
+    <string name="_0">0</string>
+    <string name="empty_cart">empty cart</string>
+    <string name="profile_pic">profile pic</string>
+    <string name="logout">Logout</string>
+</resources>

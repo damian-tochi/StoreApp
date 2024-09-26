@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools">
+
+    <data>
+        <variable
+            name="title"
+            type="String" />
+
+        <variable
+            name="onClickListener"
+            type="android.view.View.OnClickListener" />
+        
+    </data>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:padding="16dp">
+
+        <com.google.android.material.textview.MaterialTextView
+            android:id="@+id/title_txtView"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:layout_marginTop="8dp"
+            android:text="@{title}"
+            android:textColor="@android:color/black"
+            android:textSize="@dimen/text_size_normal"
+            android:textStyle="bold"
+            tools:text="Title header" />
+
+        <com.google.android.material.textview.MaterialTextView
+            android:id="@+id/more_txtView"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="8dp"
+            android:text="See all"
+            android:textColor="@color/login_green"
+            android:textSize="11sp"
+            android:textStyle="bold"
+            android:onClick="@{onClickListener}"
+            android:padding="@dimen/dimen_5"
+            tools:text="See all"
+            tools:ignore="SmallSp" />
+
+    </LinearLayout>
+
+</layout>

@@ -1,0 +1,87 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.cardview.widget.CardView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:layout_margin="@dimen/dimen_5"
+    app:cardCornerRadius="@dimen/margin_twenty"
+    app:cardElevation="2dp"
+    android:id="@+id/parentSuper"
+    android:background="@drawable/white_edittext">
+
+    <LinearLayout
+        android:id="@+id/market_item_parent_layout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:orientation="vertical">
+
+        <com.github.siyamed.shapeimageview.mask.PorterShapeImageView
+            android:id="@+id/market_item_icon"
+            android:layout_width="145dp"
+            android:layout_height="100dp"
+            android:layout_gravity="center"
+            android:scaleType="fitXY"
+            app:siShape="@drawable/image_view_rounded_top_and_bottom"
+            android:src="@drawable/image_not_available"
+            android:layout_margin="2dp"
+            app:siSquare="false"/>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:layout_margin="@dimen/margin_ten">
+
+            <androidx.appcompat.widget.AppCompatTextView
+                android:id="@+id/market_item_name_text"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_vertical"
+                android:ellipsize="end"
+                android:maxLines="1"
+                android:gravity="center_vertical"
+                android:textColor="@color/black"
+                android:textStyle="bold"
+                android:text=""
+                android:textSize="@dimen/small_text_size" />
+
+            <TextView
+                android:id="@+id/market_item_sizeText"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textColor="#9597A1"
+                android:text="1kg"
+                android:textSize="@dimen/small_text_size"/>
+
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_vertical"
+                android:gravity="center_vertical"
+                android:layout_marginTop="@dimen/dimen_5"
+                android:orientation="horizontal">
+
+                <androidx.appcompat.widget.AppCompatTextView
+                    android:id="@+id/market_item_price_text"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="4"
+                    android:maxLines="1"
+                    android:text=""
+                    android:ellipsize="end"
+                    android:layout_marginEnd="@dimen/margin_ten"
+                    android:textColor="@color/black"
+                    android:textSize="@dimen/text_size_normal"
+                    android:textStyle="bold" />
+
+            </LinearLayout>
+
+
+        </LinearLayout>
+
+    </LinearLayout>
+
+
+</androidx.cardview.widget.CardView>

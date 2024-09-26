@@ -1,0 +1,163 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.cardview.widget.CardView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/parentSuper"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:layout_margin="@dimen/margin_ten"
+    app:cardBackgroundColor="@color/shimmer_white"
+    app:cardCornerRadius="@dimen/margin_twenty"
+    app:cardElevation="5dp">
+
+    <LinearLayout
+        android:id="@+id/market_item_parent_layout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:orientation="vertical">
+
+        <RelativeLayout
+            android:layout_width="171dp"
+            android:layout_height="135dp"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent">
+
+            <com.github.siyamed.shapeimageview.mask.PorterShapeImageView
+                android:id="@+id/market_item_icon"
+                android:layout_width="168dp"
+                android:layout_height="135dp"
+                android:layout_gravity="center"
+                android:layout_margin="@dimen/dimen_4"
+                android:scaleType="fitXY"
+                android:src="@drawable/image_not_available"
+                app:siShape="@drawable/image_view_rounded_top_and_bottom"
+                app:siSquare="false" />
+
+            <View
+                android:id="@+id/out_of_stock_view"
+                android:layout_width="165dp"
+                android:layout_height="135dp"
+                android:layout_gravity="center"
+                android:layout_margin="@dimen/dimen_4" />
+
+            <androidx.appcompat.widget.AppCompatTextView
+                android:id="@+id/out_of_stock_text"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_centerInParent="true"
+                android:layout_gravity="center_vertical"
+                android:ellipsize="end"
+                android:gravity="center"
+                android:maxLines="1"
+                android:text="Out of Stock"
+                android:textColor="@color/red"
+                android:textSize="@dimen/text_size_normal"
+                android:textStyle="bold" />
+
+        </RelativeLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="@dimen/dimen_6.5"
+            android:paddingStart="@dimen/dimen_4"
+            android:orientation="vertical">
+
+            <androidx.appcompat.widget.AppCompatTextView
+                android:id="@+id/market_item_name_text"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_vertical"
+                android:ellipsize="end"
+                android:gravity="center_vertical"
+                android:maxLines="1"
+                android:text=""
+                android:textColor="@color/black"
+                android:textSize="@dimen/small_text_size"
+                android:textStyle="bold" />
+
+            <TextView
+                android:id="@+id/market_item_sizeText"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text=""
+                android:textColor="#9597A1"
+                android:textSize="@dimen/small_text_size" />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_vertical"
+                android:gravity="center_vertical"
+                android:orientation="horizontal">
+
+                <LinearLayout
+                    android:layout_width="0dp"
+                    android:layout_weight="4"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical">
+
+                    <androidx.appcompat.widget.AppCompatTextView
+                        android:id="@+id/market_item_price_text"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:maxLines="1"
+                        android:text=""
+                        android:ellipsize="end"
+                        android:layout_marginEnd="@dimen/margin_ten"
+                        android:textColor="@color/black"
+                        android:textSize="@dimen/small_text_size"
+                        android:textStyle="bold" />
+
+                    <androidx.appcompat.widget.AppCompatTextView
+                        android:id="@+id/market_item_discount_text"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:maxLines="1"
+                        android:visibility="gone"
+                        android:text=""
+                        android:ellipsize="end"
+                        android:layout_marginEnd="@dimen/margin_ten"
+                        android:textColor="@color/black"
+                        android:textSize="@dimen/small_text_size"
+                        android:textStyle="bold" />
+
+                </LinearLayout>
+                <RelativeLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content">
+
+                    <androidx.appcompat.widget.AppCompatImageButton
+                        android:id="@+id/market_add_cart_inactive"
+                        android:layout_width="47dp"
+                        android:layout_height="47dp"
+                        android:scaleType="fitXY"
+                        android:layout_gravity="center_vertical|start"
+                        android:padding="@dimen/dimen_1"
+                        android:background="@null"
+                        android:visibility="gone"
+                        android:src="@drawable/ic_add_cart_inactive" />
+
+                    <androidx.appcompat.widget.AppCompatImageButton
+                        android:id="@+id/market_add_cart"
+                        android:layout_width="47dp"
+                        android:layout_height="47dp"
+                        android:scaleType="fitXY"
+                        android:layout_gravity="center_vertical|start"
+                        android:background="?android:attr/selectableItemBackgroundBorderless"
+                        android:padding="@dimen/dimen_1"
+                        android:src="@drawable/ic_add_cart" />
+
+
+                </RelativeLayout>
+
+            </LinearLayout>
+
+        </LinearLayout>
+
+    </LinearLayout>
+
+
+</androidx.cardview.widget.CardView>
